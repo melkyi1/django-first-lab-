@@ -1,0 +1,9 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<h1>Автор: {{ author.title }}</h1>
+<p><strong>Имя:</strong> {{ author.first_name }}</p>
+<!-- author detail link not yet defined -->
+<p><strong>Фамилия:</strong> {{ author.last_name }}</p>
+<p><strong>Дата рождения:</strong> {{ author.date_of_birth }}</p>
+<p><strong>Дата СМЭРТЫ:</strong> {{ author.date_of_death }}</p>
+{% endblock %}

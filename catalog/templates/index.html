@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<h1><b>Библиотека Отаку </b> >_<</h1>
+    <p>Добро пожаловать в <em>Библиотеку отаку</em>, я тут учусь пользоваться джангой.
+</p>
+<h2>Dynamic content</h2>
+    <p>The library has the following record counts:</p>
+    <ul>
+        <li><strong>Книги:</strong> {{ num_books }}</li>
+        <li><strong>Копии:</strong> {{ num_instances }}</li>
+        <li><strong>Доступные копии:</strong> {{ num_instances_available }}</li>
+        <li><strong>Авторы:</strong> {{ num_authors }}</li>
+    </ul>
+<p>Вы посетили данную страницу: {{ num_visits }}{% if num_visits == 1%} time{% else %} раз {% endif %}.</p>
+{% endblock %}
